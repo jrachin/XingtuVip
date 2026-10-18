@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="module_name">醒图 本地VIP</string>
+    <string name="module_description">醒图(com.xt.retouch) 本地会员解锁：VIP 身份本地化，放开 VIP 素材导出与保存限制。</string>
+    <string-array name="xposed_scope">
+        <item>com.xt.retouch</item>
+    </string-array>
+</resources>

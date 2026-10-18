@@ -1,0 +1,41 @@
+# ---- Gradle / Android ----
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ---- Signing material (never publish) ----
+signing/
+*.jks
+*.keystore
+
+# ---- Build intermediates ----
+*.class
+*.dex
+*.flat
+bin/
+gen/
+out/
+release/
+aligned.apk
+unaligned.apk
+unsigned.apk
+base.apk
+
+# ---- Auto-downloaded dependency (libxposed api aar) ----
+lib/
+
+# ---- RE working directory (contains the original sample, very large) ----
+work/
+apktool/
+jadx_*/
+*.apk.bak
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+*.log

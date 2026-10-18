@@ -1,0 +1,39 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.xt.vip.xposed'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.xt.vip.xposed"
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    packaging {
+        resources {
+            // META-INF/xposed/* 必须原样进入 APK
+            excludes += []
+        }
+    }
+}
+
+dependencies {
+    // libxposed API 101（Modern Xposed API），编译期使用，不打包进 APK
+    compileOnly 'io.github.libxposed:api:101.0.1'
+}
